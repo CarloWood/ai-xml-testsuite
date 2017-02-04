@@ -2,10 +2,6 @@
 	path = cwm4
 	url = https://github.com/CarloWood/cwm4.git
 	branch = master
-[submodule "cwd"]
-	path = cwd
-	url = https://github.com/CarloWood/cwd.git
-	branch = master
 [submodule "xml"]
 	path = xml
 	url = https://github.com/CarloWood/ai-xml.git
@@ -13,4 +9,8 @@
 [submodule "utils"]
 	path = utils
 	url = https://github.com/CarloWood/ai-utils.git
+	branch = master
+[submodule "cwds"]
+	path = cwds
+	url = https://github.com/CarloWood/cwds.git
 	branch = master
