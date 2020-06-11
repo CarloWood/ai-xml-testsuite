@@ -3,6 +3,11 @@ project( ai-xml-testsuite
          LANGUAGES CXX
          DESCRIPTION "Testsuite for git submodule ai-xml." )
 
+# Begin of gitache configuration.
+set(GITACHE_PACKAGES libcwd_r)
+include(cwm4/cmake/StableGitache)
+# End of gitache configuration.
+
 # This project uses aicxx modules.
 include(cwm4/cmake/AICxxProject)
 
@@ -11,6 +16,5 @@ if (${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_BINARY_DIR})
   message (FATAL_ERROR "Please do out-of-source builds.\nCleanup: \"rm -rf CMake CMakeCache.txt CMakeFiles/\"")
 endif()
 
-add_subdirectory(cwds)
-add_subdirectory(utils)
+include(AICxxSubmodules)
 add_subdirectory(xml)

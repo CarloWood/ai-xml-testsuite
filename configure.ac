@@ -22,7 +22,7 @@ define(CW_THREADS, [both])
 m4_include([cwm4/configure_ac_top.m4])
 
 # Comment this out if the project is using doxygen to generate documentation.
-#CW_DOXYGEN
+#CW_DOXYGEN([])
 
 # Include cwm4 footer.
 m4_include([cwm4/configure_ac_bottom.m4])
