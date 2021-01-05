@@ -17,4 +17,3 @@ if (${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_BINARY_DIR})
 endif()
 
 include(AICxxSubmodules)
-add_subdirectory(xml)
