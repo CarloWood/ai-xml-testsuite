@@ -3,6 +3,11 @@ project( ai-xml-testsuite
          LANGUAGES CXX
          DESCRIPTION "Testsuite for git submodule ai-xml." )
 
+# Compile all subdirectories with the same standard.
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
 # Begin of gitache configuration.
 set(GITACHE_PACKAGES libcwd_r)
 include(cwm4/cmake/StableGitache)
